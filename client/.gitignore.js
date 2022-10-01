@@ -1,2 +1,2 @@
 node_modules
-/public/js/API/config.js
+public/js/API/config.js
