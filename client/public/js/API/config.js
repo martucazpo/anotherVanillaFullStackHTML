@@ -1,1 +1,0 @@
-export const authURL = "http://localhost:8080/auth/"
