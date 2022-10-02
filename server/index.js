@@ -9,5 +9,6 @@ app.use(express.urlencoded({extended:false}))
 app.use(cors())
 
 app.use(routes)
+require("./db")
 
 app.listen(8080, ()=>console.log("On a distant port, this server listens...."))
