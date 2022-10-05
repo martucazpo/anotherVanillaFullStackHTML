@@ -1,1 +1,43 @@
-/*# sourceMappingURL=main.css.map */
+*, html, body, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-header {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(61, 50, 35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-header .hamburger span {
+  background-color: rgb(243, 213, 137);
+}
+.landing-header .hamburger:hover span {
+  background-color: rgb(208, 139, 248);
+}
+.landing-header .main-nav {
+  width: 75vw;
+  margin-left: 2em;
+}
+.landing-header .main-nav ul li a {
+  color: rgb(243, 213, 137);
+}
+.landing-header .main-nav ul li a:hover {
+  color: rgb(208, 139, 248);
+}
+.landing-header .login-landing-btn {
+  border: 1px solid rgb(243, 213, 137);
+  background-color: inherit;
+  color: rgb(243, 213, 137);
+  padding: 1em;
+  font-size: 1em;
+  margin-right: 2em;
+}
+.landing-header .login-landing-btn:hover {
+  border: 1px solid rgb(208, 139, 248);
+  color: rgb(208, 139, 248);
+  background-color: rgb(45, 15, 63);
+}/*# sourceMappingURL=main.css.map */

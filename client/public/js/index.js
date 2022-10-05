@@ -1,17 +1,19 @@
-import { authURL } from "../js/API/config.js"
+import Hamburger from "../components/Hamburger.js";
+import Navlist from "../components/Navlist.js";
+const mainNav = document.getElementById("mainNav")
 
-console.log("hello")
-
-const testUser = {
-    firstName: "Test",
-    lastName: "User",
-    email: "test1@mail.com",
-    password1: "password",
-    password2: "password"
+const sizeWindow = () =>{
+    let windowSize = window.innerWidth;
+    mainNav.innerHTML = ""
+    if(windowSize <= 700){
+        mainNav.append(Hamburger({handleClick:null}))
+    } else {
+        mainNav.append(Navlist([{text:"LINK ONE", href:"#"},{text:"LINK TWO", href:"#"},{text:"LINK THREE", href:"#"},{text:"LINK FOUR", href:"#"}]))
+    }
 }
+sizeWindow()
 
-//await axios.post(`${authURL}signup`, testUser)
+window.addEventListener("resize", sizeWindow)
 
-let user = await axios.post(`${authURL}test`, testUser).then(res => res.data)
-console.log(user)
+
 

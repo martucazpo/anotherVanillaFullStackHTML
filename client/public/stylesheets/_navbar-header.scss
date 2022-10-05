@@ -1,0 +1,52 @@
+.landing-header {
+    width: 100vw;
+    height: 10vh;
+    background-color: $dark-neutral;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .hamburger {
+        span {
+            background-color: $warm-accent-light;
+        }
+    }
+
+    .hamburger:hover {
+        span {
+            background-color: $contrast-light;
+        }
+    }
+
+    .main-nav {
+        width: 75vw;
+        margin-left: 2em;
+
+        ul {
+            li {
+                a {
+                    color: $warm-accent-light;
+                }
+
+                a:hover {
+                    color: $contrast-light;
+                }
+            }
+        }
+    }
+
+    .login-landing-btn {
+        border: 1px solid $warm-accent-light;
+        background-color: inherit;
+        color: $warm-accent-light;
+        padding: 1em;
+        font-size: 1em;
+        margin-right: 2em;
+    }
+
+    .login-landing-btn:hover {
+        border: 1px solid $contrast-light;
+        color: $contrast-light;
+        background-color: $contrast-dark;
+    }
+}
